@@ -59,7 +59,8 @@ nfsServer.addService(pg.Execute(shell="sh", command="sudo /bin/bash /local/repos
 
 # Special node that represents the ISCSI device where the dataset resides
 dsnode = request.RemoteBlockstore("dsnode", nfsDirectory)
-dsnode.dataset = "urn:publicid:IDN+emulab.net:portalprofiles+ltdataset+DemoDataset"
+dsnode.dataset = "urn:publicid:IDN+emulab.net:ucy-cs499-dc+stdataset+ShortTerm"
+
 
 # Link between the nfsServer and the ISCSI device that holds the dataset
 dslink = request.Link("dslink")
