@@ -33,7 +33,7 @@ nfsDirectory  = "/nfs"
 
 # Number of NFS clients (there is always a server)
 pc.defineParameter("clientCount", "Number of NFS clients",
-                   portal.ParameterType.INTEGER, 2)
+                   portal.ParameterType.INTEGER, 1)
 
 pc.defineParameter("osImage", "Select OS image",
                    portal.ParameterType.IMAGE,
